@@ -16,3 +16,8 @@
 ```cmd
 >django-admin startproject NomeProjeto .
 ```
+
+### Iniciar servidor
+```cmd
+>python manage.py runserver
+```
