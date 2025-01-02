@@ -5,3 +5,14 @@
 - **Model:** vai gerarenciar a estrutura lógica de dados, mapeando os dados do manco de forma orientada a objeto.
 - **View:** controla o que é exibido no navegador do usuário, manipulanto solicitações HTTP.
 - **Template:** Define a apresentação visual dos dados, usando sistemas de templates do Django.
+
+
+# Comandos
+
+### Iniciar projeto
+```cmd
+> django-admin startproject NomeProjeto
+```
+```cmd
+>django-admin startproject NomeProjeto .
+```
