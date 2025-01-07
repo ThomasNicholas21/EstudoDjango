@@ -7,6 +7,30 @@
 - **View:** controla o que é exibido no navegador do usuário, manipulanto solicitações HTTP.
 - **Template:** Define a apresentação visual dos dados, usando sistemas de templates do Django.
 
+### HTTP Request (Requisição HTTP)
+É a mensagem enviada do cliente (geralmente um navegador ou aplicativo) para o servidor para solicitar algum recurso, como uma página da web, um arquivo ou a execução de uma operação.
+
+**Principais componentes de uma requisição HTTP:**
+- Método HTTP: Indica a ação desejada:
+    - GET: Solicita dados do servidor.
+    - POST: Envia dados para o servidor.
+    - PUT: Atualiza dados existentes.
+    - DELETE: Remove dados no servidor.
+- URL: O endereço do recurso solicitado.
+- Cabeçalhos (Headers): Informações adicionais, como o tipo de conteúdo aceito (Accept), informações do cliente (User-Agent), etc.
+- Corpo (Body): Dados enviados na requisição (aplicável para métodos como POST e PUT).
+
+### HTTP Response (Resposta HTTP)
+É a mensagem enviada pelo servidor ao cliente em resposta à requisição HTTP. Ela contém o resultado da solicitação, seja o conteúdo solicitado ou um status informando o que aconteceu.
+
+- Principais componentes de uma resposta HTTP:
+    - Código de status: Informa o resultado da requisição:
+    - 200 OK: Sucesso.
+    - 404 Not Found: Recurso não encontrado.
+    - 500 Internal Server Error: Erro no servidor.
+- Cabeçalhos (Headers): Informações sobre a resposta, como tipo de conteúdo (Content-Type), tamanho do conteúdo, etc.
+Corpo (Body): O conteúdo da resposta, como o HTML de uma página, dados JSON, imagens, etc.
+
 # Arquivos
 ## __settings.py:__ 
 Toda a configuração da aplicação é feita nesse arquivo, definindo váriaveis de ambinete e configurações gerais para o funcionamento do aplicativo, como conexão com banco de dados, localização de templates, e detalhes de segurança.
