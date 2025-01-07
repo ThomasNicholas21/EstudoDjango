@@ -18,15 +18,7 @@ from home.views import home_view
 from blog.views import blog_view
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
 
-# def home_view(request):
-#     return HttpResponse('Home Page')
-
-# def blog_view(request):
-#     return HttpResponse('Blog Page')
-
-# HTTP Request <-> HTTP Response
 urlpatterns = [
     path('', home_view),
     path('blog/', blog_view),
