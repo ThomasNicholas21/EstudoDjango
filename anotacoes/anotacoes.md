@@ -72,3 +72,8 @@ Toda a configuração da aplicação é feita nesse arquivo, definindo váriavei
 ```cmd
 >python manage.py runserver
 ```
+
+### Iniciar um App
+```cmd
+>python manage.py startapp
+```
