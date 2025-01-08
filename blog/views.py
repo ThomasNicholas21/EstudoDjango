@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 def blog_view(request):
-    return HttpResponse('Blog Page Aplicativo')
+    return render(request, 'blog.html')
 
 def road_map(request):
-    return HttpResponse('Blog RoadMap')
+    return render(request, 'roadmap.html')
