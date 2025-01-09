@@ -93,3 +93,8 @@ Faz trocar o valor do texto no template filho.
 ```HTML
 {% block texto %} TEXTO {% endblock texto %}
 ```
+### include
+Utilizando juntamente a um "partials", normalmente utilizado quando está em partes, que pode ser utilizado em outro local.
+```HTML
+{% include 'caminho/partials/arquivo' %}
+```
