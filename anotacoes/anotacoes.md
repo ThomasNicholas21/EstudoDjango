@@ -2,7 +2,7 @@
 
 - Framework para desenvolvimento web de forma rápida, segura e escalável, que segue o padrão MVT (Model-View-Tamplate).
 
-### MVT - Model-View-Control
+### MVT - Model-View-Template
 - **Model:** vai gerarenciar a estrutura lógica de dados, mapeando os dados do manco de forma orientada a objeto.
 - **View:** controla o que é exibido no navegador do usuário, manipulanto solicitações HTTP. Também pode enviar dados para dentro dos templates.
 - **Template:** Define a apresentação visual dos dados, usando sistemas de templates do Django.
