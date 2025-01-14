@@ -98,3 +98,9 @@ Utilizando juntamente a um "partials", normalmente utilizado quando está em par
 ```HTML
 {% include 'caminho/partials/arquivo' %}
 ```
+
+### load
+Utilizar sempre que for utilizar arquivos staticos, irá carregar o aplicativo "django.contrib.staticfiles"
+```HTML
+{% load static %}
+```
