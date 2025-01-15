@@ -5,6 +5,6 @@
     <h1>{% block texto %} Estudo Django {% endblock texto %}</h1>
 </body>
 
-<main class="posts">
-    {% include "global/partials/postblock.html" %}
+<main class="content">
+    {% block posts %}{% endblock posts %}
 </main>
