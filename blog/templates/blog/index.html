@@ -3,17 +3,11 @@
 {% block texto %}
 <header>
     <h1>Blog</h1>
-    <p>Thomas Nicholas</p>
+    <h2>Thomas Nicholas</h2>
     {{ variavel }}
 </header>
-
-<section>
-    <h2>Tecnologias</h2>
-    <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>SQL</li>
-        <li>HTML/CSS</li>
-    </ul>
-</section>
 {% endblock texto %}
+
+{% block posts %}
+    {% include "global/partials/postblock.html" %}
+{% endblock posts %}
