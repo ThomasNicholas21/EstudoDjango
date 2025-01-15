@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def blog_view(request):
     context = {
-        'variavel': 'Isso é uma variável utilizando a função render',
+        'variavel': 'artigos',
         'title': 'Blog'
     }
     return render(request, 'blog/index.html', context)
