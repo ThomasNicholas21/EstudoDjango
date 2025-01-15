@@ -31,3 +31,34 @@ section {
     border-radius: 10px; /* Adiciona bordas arredondadas à seção */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave à seção para dar profundidade */
 }
+
+nav {
+    background-color: rgb(255, 255, 255); /* Fundo azul escuro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para destaque */
+    margin-bottom: 20px; /* Espaçamento inferior para separar do conteúdo abaixo */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens no nav */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margens padrão */
+    gap: 20px; /* Espaçamento entre os itens da lista */
+}
+
+nav a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #000000; /* Cor branca para o texto */
+    font-weight: bold; /* Texto em negrito */
+    padding: 10px 15px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: rgb(255, 255, 255); /* Fundo azul para os links */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+nav a:hover {
+    background-color: rgb(235, 89, 89); /* Fundo mais escuro ao passar o mouse */
+}
