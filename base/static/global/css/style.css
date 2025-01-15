@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, ou fontes semelhantes */
-    background-color: rgb(255, 0, 0); /* Define o fundo da página como vermelho vibrante */
+    background-color: rgb(117, 42, 117); /* Define o fundo da página como vermelho vibrante */
     color: #ffffff; /* Define a cor do texto como branco para criar contraste */
     margin: 0; /* Remove a margem padrão do body */
     padding: 0; /* Remove o padding padrão do body */
@@ -60,5 +60,5 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(235, 89, 89); /* Fundo mais escuro ao passar o mouse */
+    background-color: rgb(117, 42, 117); /* Fundo mais escuro ao passar o mouse */
 }
