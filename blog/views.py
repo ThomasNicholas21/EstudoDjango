@@ -5,7 +5,7 @@ from blog.data import posts
 # Create your views here.
 def blog_view(request):
     context = {
-        #'variavel': 'artigos',
+        'variavel': 'artigos',
         'title': 'Blog',
         'posts': posts
     }
