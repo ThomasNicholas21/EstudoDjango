@@ -10,6 +10,7 @@
 nav {
     background-color: rgb(255, 255, 255); /* Fundo azul escuro */
     padding: 15px; /* Espaçamento interno */
+    border-radius: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 20%); /* Sombra suave para destaque */
     margin-bottom: 20px; /* Espaçamento inferior para separar do conteúdo abaixo */
 }
@@ -17,6 +18,7 @@ nav {
 nav ul {
     list-style: none; /* Remove marcadores da lista */
     display: flex; /* Exibe os itens em linha */
+    border-radius: 1.5rem;
     justify-content: center; /* Centraliza os itens no nav */
 }
 
@@ -24,13 +26,15 @@ nav a {
     text-decoration: none; /* Remove sublinhado dos links */
     color: #000000; /* Cor branca para o texto */
     font-weight: bold; /* Texto em negrito */
-    padding: 1.5rem 1.5rem; /* Espaçamento interno do link */
+    padding: 10px 15px; /* Espaçamento interno do link */
+    border-radius: 1.5rem;
     background-color: rgb(255, 255, 255); /* Fundo azul para os links */
     transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
 nav a:hover {
-    background-color: rgb(243, 224, 243); /* Fundo mais escuro ao passar o mouse */
+    color: #fff;
+    background-color: #014449; /* Fundo mais escuro ao passar o mouse */
 }
 
 html {
@@ -39,7 +43,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: #f1f1f1;
+    background: #014449;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +56,7 @@ body {
     font-size: 1.6rem;
     background-color: #fff;
     padding: 1.5rem;
+    border-radius: 1.5rem;
     box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
 }
 
@@ -64,6 +69,7 @@ body {
 .post {
     background-color: #fff;
     padding: 1.5rem;
+    border-radius: 1.5rem;
     box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
 }
 
