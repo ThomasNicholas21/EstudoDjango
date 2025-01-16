@@ -11,6 +11,15 @@ def blog_view(request):
     }
     return render(request, 'blog/index.html', context)
 
+def post_view(request, id):
+    print('post', id)
+    context = {
+    'variavel': 'artigos',
+    'title': 'Blog',
+    'posts': posts
+    }
+    return render(request, 'blog/index.html', context)
+
 def road_map(request):
     context = {
         'variavel': 'Isso é uma variável utilizando a função render',
