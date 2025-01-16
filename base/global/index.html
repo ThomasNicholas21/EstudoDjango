@@ -1,9 +1,9 @@
 {% include "global/partials/head.html" %}
 {% include "global/partials/menu.html" %}
 
-<body>
+{% if variavel %}
     <h1>{% block texto %} Estudo Django {% endblock texto %}</h1>
-</body>
+{% endif %}
 
 <main class="content">
     {% block posts %}{% endblock posts %}
