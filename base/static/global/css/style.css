@@ -1,42 +1,16 @@
-body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, ou fontes semelhantes */
-    background-color: rgb(117, 42, 117); /* Define o fundo da página como vermelho vibrante */
-    color: #ffffff; /* Define a cor do texto como branco para criar contraste */
-    margin: 0; /* Remove a margem padrão do body */
-    padding: 0; /* Remove o padding padrão do body */
-    display: flex; /* Define o body como um contêiner flexível */
-    flex-direction: column; /* Organiza os elementos dentro do body em uma coluna */
-    align-items: center; /* Centraliza horizontalmente os elementos filhos */
-    justify-content: center; /* Centraliza verticalmente os elementos filhos */
-    min-height: 100vh; /* Garante que o body tenha pelo menos a altura total da janela do navegador */
-}
-
-header {
-    background-color: rgb(247, 247, 247); /* Define o fundo do cabeçalho como cinza claro */
-    text-align: justify; /* Justifica o texto dentro do cabeçalho */
-    color: #000000; /* Define a cor do texto do cabeçalho como preto */
-    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo do cabeçalho */
-    width: 80%; /* Define a largura do cabeçalho como 80% da largura da janela */
-    border-radius: 10px; /* Adiciona bordas arredondadas ao cabeçalho */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave ao cabeçalho para dar profundidade */
-}
-
-section {
-    text-align: center; /* Centraliza o texto dentro da seção */
-    background-color: #ffffff; /* Define o fundo da seção como branco */
-    color: #000000; /* Define a cor do texto da seção como preto */
-    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo da seção */
-    margin: 20px 0; /* Adiciona espaçamento externo acima e abaixo de cada seção */
-    width: 80%; /* Define a largura da seção como 80% da largura da janela */
-    border-radius: 10px; /* Adiciona bordas arredondadas à seção */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave à seção para dar profundidade */
+/* Reset */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
     background-color: rgb(255, 255, 255); /* Fundo azul escuro */
     padding: 15px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para destaque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 20%); /* Sombra suave para destaque */
     margin-bottom: 20px; /* Espaçamento inferior para separar do conteúdo abaixo */
 }
 
@@ -44,21 +18,57 @@ nav ul {
     list-style: none; /* Remove marcadores da lista */
     display: flex; /* Exibe os itens em linha */
     justify-content: center; /* Centraliza os itens no nav */
-    padding: 0; /* Remove padding padrão */
-    margin: 0; /* Remove margens padrão */
-    gap: 20px; /* Espaçamento entre os itens da lista */
 }
 
 nav a {
     text-decoration: none; /* Remove sublinhado dos links */
     color: #000000; /* Cor branca para o texto */
     font-weight: bold; /* Texto em negrito */
-    padding: 10px 15px; /* Espaçamento interno do link */
-    border-radius: 5px; /* Bordas arredondadas */
+    padding: 1.5rem 1.5rem; /* Espaçamento interno do link */
     background-color: rgb(255, 255, 255); /* Fundo azul para os links */
     transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
 nav a:hover {
-    background-color: rgb(117, 42, 117); /* Fundo mais escuro ao passar o mouse */
+    background-color: rgb(243, 224, 243); /* Fundo mais escuro ao passar o mouse */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
+}
+
+.content {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.post {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
+}
+
+@media (min-width: 600px) {
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    }
 }
