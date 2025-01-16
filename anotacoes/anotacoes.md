@@ -82,6 +82,21 @@ Toda a configuração da aplicação é feita nesse arquivo, definindo váriavei
 ### namespace
 Para evitar colisão de nomes iguais ao renderizar um arquivo HTML em tamplates, ou seja, evitar que dois templates com nome iguais sejam chamados de forma errada, se utiliza o __namespace__, no qual consiste em criar uma pasta dentro da pasta template para o arquivo em questão e declarar o seu caminho na view, exemplo: "templates/exemplo/exemplo.html". 
 
+### URL Dinâmica
+São URLs que vão incluir variáveis para definir rotas, permitindo que os valores sejam passados na URL e capturados na View correspondente. Evitando que crie URL estática para cada rota. Sendo ela configurada por padrão da seguinte maneira:
+```python
+
+# urls.py
+urlpatterns = [
+    path('exemplo/<exemplo:id>/', views.exemplo, name='exemplo')
+]
+
+# views.py
+def exemplo(request, id):
+    ...
+
+```
+
 # Django HTML
 ### extends
 Herança de template utilizado.
