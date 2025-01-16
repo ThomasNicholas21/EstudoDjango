@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from blog.data import posts
+
 
 # Create your views here.
 def blog_view(request):
     context = {
         'variavel': 'artigos',
-        'title': 'Blog'
+        'title': 'Blog',
+        'posts': posts
     }
     return render(request, 'blog/index.html', context)
 
