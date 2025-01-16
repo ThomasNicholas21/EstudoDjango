@@ -1,7 +1,7 @@
 {% extends "global/index.html" %}
 
 {% block texto %}
-<header>
+<header class="title">
     <h1>Blog</h1>
     <h2>Thomas Nicholas</h2>
     {{ variavel }}
@@ -9,5 +9,7 @@
 {% endblock texto %}
 
 {% block posts %}
+    {% include "global/partials/postblock.html" %}
+    {% include "global/partials/postblock.html" %}
     {% include "global/partials/postblock.html" %}
 {% endblock posts %}
