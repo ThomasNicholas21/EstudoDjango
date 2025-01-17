@@ -10,6 +10,7 @@
 nav {
     background-color: rgb(255, 255, 255); /* Fundo azul escuro */
     padding: 15px; /* Espaçamento interno */
+    margin-top: 2.0rem;
     border-radius: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 20%); /* Sombra suave para destaque */
     margin-bottom: 20px; /* Espaçamento inferior para separar do conteúdo abaixo */
