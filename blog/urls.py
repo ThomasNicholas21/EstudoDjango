@@ -4,9 +4,11 @@ from django.urls import path
 
 app_name = 'blog'
 
+# Django URLs:
+# https://docs.djangoproject.com/en/4.2/topics/http/urls/
 
 urlpatterns = [
     path('', views.blog_view, name='blog'),
-    path('post/<id>', views.post_view, name='post'),
+    path('post/<int:id>', views.post_view, name='post'),
     path('roadmap/', views.road_map, name='roadmap')
 ]
