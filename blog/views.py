@@ -11,13 +11,21 @@ def blog_view(request):
     }
     return render(request, 'blog/index.html', context)
 
-def post_view(request, id):
+def post_view(request, post_id):
     print('post', id)
+    found_id = None
+
+    for post in posts:
+        if post['id'] == post_id:
+            found_id = post
+            break
+
     context = {
     'variavel': 'artigos',
     'title': 'Blog',
-    'posts': posts
+    'posts': [found_id]
     }
+
     return render(request, 'blog/index.html', context)
 
 def road_map(request):
