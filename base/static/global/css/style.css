@@ -7,6 +7,15 @@
   box-sizing: border-box;
 }
 
+a {
+    color: #014449;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 nav {
     background-color: rgb(255, 255, 255); /* Fundo azul escuro */
     padding: 15px; /* Espaçamento interno */
