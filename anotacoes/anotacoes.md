@@ -78,6 +78,12 @@ Toda a configuração da aplicação é feita nesse arquivo, definindo váriavei
 >python manage.py startapp
 ```
 
+### Coletar arquivos estáticos
+Esse comando se utiliza quando a aplicação irá rodar em produção. Como Django não é um servidor, ele coleta e cria um diretório para que o mesmo seja configurado em um servidor. Para o mesmo funcionar, deve ser criado uma variável de ambiente STATIC_ROOT, indicando aonde esse diretório deve ser criado.
+```cmd
+>python manage.py collectstatic
+```
+
 # Conceitos
 ### namespace
 Para evitar colisão de nomes iguais ao renderizar um arquivo HTML em tamplates, ou seja, evitar que dois templates com nome iguais sejam chamados de forma errada, se utiliza o __namespace__, no qual consiste em criar uma pasta dentro da pasta template para o arquivo em questão e declarar o seu caminho na view, exemplo: "templates/exemplo/exemplo.html". 
