@@ -53,6 +53,8 @@ Toda a configuração da aplicação é feita nesse arquivo, definindo váriavei
 - Internacionalização
 - Arquivos estáticos e mídia
     - STATIC_URL
+    - STATIC_ROOT
+    - STATICFILES_DIRS
     - MEDIA_URL/MEDIA_ROOT
 - Outros
     - TEMPLATES
