@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest, HttpResponse, Http404
 from blog.data import posts
 from typing import Any
 
@@ -22,7 +22,7 @@ def post_view(request: HttpRequest, post_id: int) -> HttpResponse:
             break
     
     if found_id is None:
-        raise Exception('ID inexistente.')
+        raise Http404('ID inexistente.')
     
     context = {
     'variavel': 'artigos',
