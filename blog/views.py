@@ -22,8 +22,8 @@ def post_view(request, post_id):
 
     context = {
     'variavel': 'artigos',
-    'title': 'Blog',
-    'post': found_id
+    'title': found_id['title'],
+    'post': found_id,
     }
 
     return render(request, 'blog/post.html', context)
