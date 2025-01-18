@@ -127,3 +127,11 @@ Utilizar sempre que for utilizar arquivos staticos, irá carregar o aplicativo "
 ```HTML
 {% load static %}
 ```
+
+# Bibliotecas
+### whitenoise
+Servidor que pode ser utilizado para "servir" arquivos estáticos. Ele é um middleware que deve ser configurado na variável de ambiente MIDDLEWARE do django.
+```cmd
+>pip install whinoise
+``` 
+Colocar _"whitenoise.middleware.WhiteNoiseMiddleware",_ abaixo de middleware de segurança do Django.
